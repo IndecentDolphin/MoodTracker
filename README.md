@@ -21,12 +21,16 @@ So that my mood is tracked
 I want to record my mood
 
 As a user
+So that I can see information relevent to my mood
+I want advice displayed after I have tracked my mood
+
+As a user
 So that I can see how my mood has developed
 I want to see a history of my previously tracked moods
 
 As a user
-So that I can see information relevent to my mood
-I want advice displayed on a summary page
+So that I can get more detailed/ personal advice
+I want advice displayed calculated using my historical moods
 
 As a user
 So that I know I have entered a valid username and password on sign up.
@@ -35,4 +39,5 @@ I want to see the homepage
 As a User
 So that I know I have not entered a valid username and password on sign up.
 I want to see an error indicating where I have gone wrong.
+
 ```
