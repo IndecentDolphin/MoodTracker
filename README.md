@@ -21,8 +21,8 @@ So that my mood is tracked
 I want to record my mood
 
 As a user
-So that I can see information relevent to my mood
-I want advice displayed after I have tracked my mood
+So that I enjoy using the app
+I want a cute relevent animation that matches my mood after I have tracked it
 
 As a user
 So that I can see how my mood has developed
