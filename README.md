@@ -41,3 +41,7 @@ So that I know I have not entered a valid username and password on sign up.
 I want to see an error indicating where I have gone wrong.
 
 ```
+
+## Creating our MongoDB database
+
+    First, we had to use HomeBrew to install MongoDB using
