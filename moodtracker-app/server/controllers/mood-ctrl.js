@@ -34,6 +34,7 @@ createMood = (req, res) => {
 };
 
 updateMood = async (req, res) => {
+  console.log('update', req.body)
   const body = req.body;
 
   if (!body) {
@@ -50,9 +51,7 @@ updateMood = async (req, res) => {
         message: "Mood not found!",
       });
     }
-    mood.name = body.name;
-    mood.time = body.time;
-    mood.rating = body.rating;
+    mood.mood_type = body.mood_type;
     mood
       .save()
       .then(() => {
