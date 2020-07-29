@@ -42,6 +42,19 @@ I want to see an error indicating where I have gone wrong.
 
 ```
 
-## Creating our MongoDB database
+# Dependancies
 
-    First, we had to use HomeBrew to install MongoDB using
+Mongo DB database
+nodeMon
+
+## To run the application locally
+
+### `brew services start mongodb-community@4.2`
+
+### cd server
+
+### nodemon index.js
+
+### cd client
+
+### yarn start

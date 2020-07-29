@@ -29,11 +29,20 @@ class MoodsList extends Component {
 
   render() {
     const { moods } = this.state;
-    console.log("TLC: MoodsList -> render -> moods", moods);
+    let moodTypes = [];
+   
+    
+    moods.forEach(mood => {
+      moodTypes.push(mood.mood_type)})
+
+    const listMoods = moodTypes.map((moodType, index) =>
+  <li key={index}>{moodType}</li>)
+   
 
     return (
       <Wrapper>
-        <div>{moods && <p>These are the moods {moods.mood_type}</p>}</div>
+        <div>{moods && <p>These are the moods </p>}</div>
+        <ul>{listMoods}</ul>
       </Wrapper>
     );
   }
