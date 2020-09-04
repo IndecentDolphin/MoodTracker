@@ -45,24 +45,24 @@ class MoodInsert extends Component {
   }
 
   handleChangeInputName = async (event) => {
-    const name = event.target.value;
-    this.setState({ name });
+    const mood_type = event.target.value;
+    this.setState({ mood_type });
   };
 
   handleIncludeMood = async () => {
-    const { name } = this.state;
-    const payload = { name };
+    const { mood_type } = this.state;
+    const payload = { mood_type };
 
     await api.insertMood(payload).then((res) => {
       window.alert(`Movie inserted successfully`);
       this.setState({
-        name: "",
+        mood_type: "",
       });
     });
   };
 
   render() {
-    const { name } = this.state;
+    const { mood_type } = this.state;
     return (
       <Wrapper>
         <Title>Create Mood</Title>
@@ -70,7 +70,7 @@ class MoodInsert extends Component {
         <Label>Name: </Label>
         <InputText
           type="text"
-          value={name}
+          value={mood_type}
           onChange={this.handleChangeInputName}
         />
         <Button onClick={this.handleIncludeMood}>Add Mood</Button>
