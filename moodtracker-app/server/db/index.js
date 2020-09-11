@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/MoodTracker", { useNewUrlParser: true })
+  .connect("mongodb+srv://admin:317YnDNfD3CeLuno@moodtrackercluster.dfbbc.gcp.mongodb.net/moodtracker_db?retryWrites=true&w=majority", { useNewUrlParser: true })
   .catch((e) => {
     console.error("Connection error", e.message);
   });
@@ -9,3 +9,4 @@ mongoose
 const db = mongoose.connection;
 
 module.exports = db;
+
