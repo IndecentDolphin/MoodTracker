@@ -30,14 +30,14 @@ class MoodsList extends Component {
   render() {
     const { moods } = this.state;
     let moodTypes = [];
-   
-    
-    moods.forEach(mood => {
-      moodTypes.push(mood.mood_type)})
 
-    const listMoods = moodTypes.map((moodType, index) =>
-  <li key={index}>{moodType}</li>)
-   
+    moods.forEach((mood) => {
+      moodTypes.push(mood.mood_type);
+    });
+
+    const listMoods = moodTypes.map((moodType, index) => (
+      <li key={index}>{moodType}</li>
+    ));
 
     return (
       <Wrapper>
