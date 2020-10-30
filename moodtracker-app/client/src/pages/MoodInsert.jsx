@@ -46,6 +46,7 @@ class MoodInsert extends Component {
 
   handleChangeInputName = async (event) => {
     const mood_type = event.target.value;
+    console.log("New value: ", mood_type);
     this.setState({ mood_type });
   };
 
@@ -53,8 +54,9 @@ class MoodInsert extends Component {
     const { mood_type } = this.state;
     const payload = { mood_type };
 
+    console.log("handleIncludeMood: ", payload);
     await api.insertMood(payload).then((res) => {
-      window.alert(`Movie inserted successfully`);
+      window.alert(`Mood inserted successfully`);
       this.setState({
         mood_type: "",
       });

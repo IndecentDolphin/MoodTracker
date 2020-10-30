@@ -1,10 +1,13 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://moodtrackerapp.ew.r.appspot.com/api",
+  baseURL: "http://localhost:3000/api",
 });
 
-export const insertMood = (payload) => api.post(`/mood`, payload);
+export const insertMood = (payload) => {
+  console.log("Posting Mood!!!");
+  return api.post(`/mood`, payload)
+};
 export const getAllMoods = () => api.get(`/moods`);
 export const updateMoodById = (id, payload) => api.put(`/mood/${id}`, payload);
 export const deleteMoodById = (id) => api.delete(`/mood/${id}`);

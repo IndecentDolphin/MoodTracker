@@ -10,9 +10,9 @@ const moodRouter = require("./routes/mood-router");
 const app = express();
 const apiPort = 3000;
 
-// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
-// app.use(bodyParser.json());
+app.use(bodyParser.json());
 
 app.use(express.static("../client/build"));
 // The call below will need to be configured, why does GET work and not POST, also maybe somthing to do with the live isssue.
